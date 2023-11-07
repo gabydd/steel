@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699233521475,
+  "lastUpdate": 1699320292129,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -187,6 +187,100 @@ window.BENCHMARK_DATA = {
             "name": "ackermann-3-3",
             "value": 107,
             "range": "± 2",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Matthew Paras",
+            "username": "mattwparas",
+            "email": "34500476+mattwparas@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "12e6c7fd72810d34dbd90b0bd359ba76fc078e0e",
+          "message": "Support proper ellipses expansion (#94)\n\n* support proper ellipses expansion\r\n\r\n* clean up\r\n\r\n* remove debug logs\r\n\r\n* remove more debug prints\r\n\r\n* fix formatting\r\n\r\n* swap panic for error\r\n\r\n* clean up, fix error with printer\r\n\r\n* fix issue in cycle collector\r\n\r\n* clean up\r\n\r\n* one more test\r\n\r\n* remove extra print\r\n\r\n* fix bug with color dependency",
+          "timestamp": "2023-11-06T20:48:37Z",
+          "url": "https://github.com/mattwparas/steel/commit/12e6c7fd72810d34dbd90b0bd359ba76fc078e0e"
+        },
+        "date": 1699320291120,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 121,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 637692,
+            "range": "± 2667",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1514177,
+            "range": "± 7953",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 433632,
+            "range": "± 1049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 115,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 117,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 40657,
+            "range": "± 1367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 67651904,
+            "range": "± 207965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 51195965,
+            "range": "± 1347197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 342,
+            "range": "± 459",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 9258,
+            "range": "± 181",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 114,
+            "range": "± 1",
             "unit": "ns/iter"
           }
         ]
