@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699320292129,
+  "lastUpdate": 1699406480963,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -281,6 +281,100 @@ window.BENCHMARK_DATA = {
             "name": "ackermann-3-3",
             "value": 114,
             "range": "± 1",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Angelo Ceccato",
+            "username": "AngeloChecked",
+            "email": "30749948+AngeloChecked@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "90784c0e8bd1b7a782e2f086490f333b87d9ff73",
+          "message": "implementation of command test (#95)\n\n* implementation of command test\r\n\r\n* improve test command description\r\n\r\n---------\r\n\r\nCo-authored-by: Angelo Ceccato <angeloceccato@IT-mac-cean-669341865.local>",
+          "timestamp": "2023-11-07T16:50:50Z",
+          "url": "https://github.com/mattwparas/steel/commit/90784c0e8bd1b7a782e2f086490f333b87d9ff73"
+        },
+        "date": 1699406480051,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 121,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 639413,
+            "range": "± 315",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1499364,
+            "range": "± 4967",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 436448,
+            "range": "± 163",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 113,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 112,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 40510,
+            "range": "± 2092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 67323302,
+            "range": "± 19738",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 50159140,
+            "range": "± 972589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 336,
+            "range": "± 554",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 9090,
+            "range": "± 11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 112,
+            "range": "± 0",
             "unit": "ns/iter"
           }
         ]
