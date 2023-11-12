@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699406480963,
+  "lastUpdate": 1699752381095,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -374,6 +374,100 @@ window.BENCHMARK_DATA = {
           {
             "name": "ackermann-3-3",
             "value": 112,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dane Lipscombe",
+            "username": "dlip",
+            "email": "danelipscombe@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "9a7b26ee363a39fe4b8599d2f064c1911afb1cff",
+          "message": "Add nix flake (#97)",
+          "timestamp": "2023-11-11T17:15:30Z",
+          "url": "https://github.com/mattwparas/steel/commit/9a7b26ee363a39fe4b8599d2f064c1911afb1cff"
+        },
+        "date": 1699752380087,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 120,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 634778,
+            "range": "± 1527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1493076,
+            "range": "± 1502",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 433458,
+            "range": "± 304",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 121,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 121,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 41468,
+            "range": "± 2276",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 69940752,
+            "range": "± 48164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 54175604,
+            "range": "± 3083221",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 332,
+            "range": "± 540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 8987,
+            "range": "± 34",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 116,
             "range": "± 0",
             "unit": "ns/iter"
           }
