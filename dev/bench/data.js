@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1699752381095,
+  "lastUpdate": 1700011385016,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -468,6 +468,100 @@ window.BENCHMARK_DATA = {
           {
             "name": "ackermann-3-3",
             "value": 116,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Matthew Paras",
+            "username": "mattwparas",
+            "email": "34500476+mattwparas@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "8bf3bfba586beefe7b6cea9f059e54b7052e87ad",
+          "message": "Fix panics in parser (#96)\n\n* There were some issues with the parser - this should fix those obvious panics\r\n* Tests against some of the r7rs benchmarks\r\n* Adds some more built ins, fixes some issues with the garbage collector\r\n* Remove the dependency on the `colored` crate - that is now a steel library\r\n* Mutable local variables are now expanded to calls to `box`, `unbox`, and `set-box!`",
+          "timestamp": "2023-11-14T06:15:21Z",
+          "url": "https://github.com/mattwparas/steel/commit/8bf3bfba586beefe7b6cea9f059e54b7052e87ad"
+        },
+        "date": 1700011383901,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 136,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 752420,
+            "range": "± 615",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1699005,
+            "range": "± 11127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 549445,
+            "range": "± 207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 131,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 1934919,
+            "range": "± 20013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 38999,
+            "range": "± 1544",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 72152664,
+            "range": "± 80854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 62692980,
+            "range": "± 527984",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 310,
+            "range": "± 682",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 10164,
+            "range": "± 44",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 135,
             "range": "± 0",
             "unit": "ns/iter"
           }
