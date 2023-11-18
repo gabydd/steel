@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700011385016,
+  "lastUpdate": 1700270299307,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -562,6 +562,100 @@ window.BENCHMARK_DATA = {
           {
             "name": "ackermann-3-3",
             "value": 135,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Matthew Paras",
+            "username": "mattwparas",
+            "email": "34500476+mattwparas@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "59b1c66e171b300533554f47231660a0c783f93b",
+          "message": "Switch to use plain lets for anonymous function application (#99)\n\n* switch to use plain lets for anonymous function application\r\n\r\n* make box, unbox, and set-box! an opcode\r\n\r\n* make gc run during test\r\n\r\n* checkpoint\r\n\r\n* fix broken to-string impl\r\n\r\n* reduce iterations\r\n\r\n* reduce iterations\r\n\r\n* remove warning",
+          "timestamp": "2023-11-17T05:30:08Z",
+          "url": "https://github.com/mattwparas/steel/commit/59b1c66e171b300533554f47231660a0c783f93b"
+        },
+        "date": 1700270298537,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 113,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 651226,
+            "range": "± 1940",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1587736,
+            "range": "± 35111",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 444292,
+            "range": "± 707",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 105,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 1629292,
+            "range": "± 16171",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 23882,
+            "range": "± 2241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 58259348,
+            "range": "± 2531566",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 55017982,
+            "range": "± 2969105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 210,
+            "range": "± 59",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 8728,
+            "range": "± 50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 105,
             "range": "± 0",
             "unit": "ns/iter"
           }
