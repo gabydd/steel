@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700270299307,
+  "lastUpdate": 1700874972673,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -657,6 +657,100 @@ window.BENCHMARK_DATA = {
             "name": "ackermann-3-3",
             "value": 105,
             "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Matthew Paras",
+            "username": "mattwparas",
+            "email": "34500476+mattwparas@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "a72bd5bba8f430072bad3ecab13a2313c1092ce2",
+          "message": "Replace the lexer with a hand written one (#102)\n\n* dont immediately deep clone the whole stack\r\n\r\n* new lexer\r\n\r\n* drop logos\r\n\r\n* fix broken continuations implementation\r\n\r\n* fix printer\r\n\r\n* lower to closed continuation when closing\r\n\r\n* fix up remaining continuation references\r\n\r\n* clean up\r\n\r\n* rename continuation\r\n\r\n* dead code\r\n\r\n* stop constant evaluator from running an infinite loop\r\n\r\n* add handlers to gc\r\n\r\n* add parsing of octal hex and binary integers",
+          "timestamp": "2023-11-24T19:15:31Z",
+          "url": "https://github.com/mattwparas/steel/commit/a72bd5bba8f430072bad3ecab13a2313c1092ce2"
+        },
+        "date": 1700874972192,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 111,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 669685,
+            "range": "± 1762",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1583598,
+            "range": "± 34056",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 423648,
+            "range": "± 14149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 869832,
+            "range": "± 25285",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 1650700,
+            "range": "± 23688",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 24192,
+            "range": "± 2163",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 59792945,
+            "range": "± 854276",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 53976662,
+            "range": "± 2120437",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 209,
+            "range": "± 67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 9264,
+            "range": "± 384",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 279357,
+            "range": "± 13332",
             "unit": "ns/iter"
           }
         ]
