@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1700874972673,
+  "lastUpdate": 1701134399305,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -751,6 +751,100 @@ window.BENCHMARK_DATA = {
             "name": "ackermann-3-3",
             "value": 279357,
             "range": "± 13332",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Matthew Paras",
+            "username": "mattwparas",
+            "email": "34500476+mattwparas@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "c27807931a3cd33ad00b5b2e1b2a44b26f729bf7",
+          "message": "Create another result type which does not automatically propagate the error (#103)\n\n* first pass, have two different result types\r\n\r\n* adjust libraries to use new representation\r\n\r\n* change test to not coerce to result\r\n\r\n* address test failures\r\n\r\n* start some docs\r\n\r\n* third kind of result type\r\n\r\n* fix redefinition not being handled by const evaluation pass, add more dylibs\r\n\r\n* install dylibs in ci\r\n\r\n* fuss with CI\r\n\r\n* typo in ci\r\n\r\n* make native directory\r\n\r\n* add caching\r\n\r\n* use sccache\r\n\r\n* sccache\r\n\r\n* typo in ci\r\n\r\n* revert ci changes\r\n\r\n* get cache in ci working\r\n\r\n* see if cache works\r\n\r\n* remove debug logging\r\n\r\n* fix opcode overriding with cons",
+          "timestamp": "2023-11-27T04:20:08Z",
+          "url": "https://github.com/mattwparas/steel/commit/c27807931a3cd33ad00b5b2e1b2a44b26f729bf7"
+        },
+        "date": 1701134398642,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 110,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 693713,
+            "range": "± 805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1610297,
+            "range": "± 44882",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 434363,
+            "range": "± 496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 842442,
+            "range": "± 25714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 1634863,
+            "range": "± 5258",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 24196,
+            "range": "± 1372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 60746066,
+            "range": "± 1725421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 51554718,
+            "range": "± 904886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 211,
+            "range": "± 96",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 9477,
+            "range": "± 856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 280440,
+            "range": "± 11348",
             "unit": "ns/iter"
           }
         ]
