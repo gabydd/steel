@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701134399305,
+  "lastUpdate": 1701479775451,
   "repoUrl": "https://github.com/mattwparas/steel",
   "entries": {
     "Benchmark": [
@@ -845,6 +845,100 @@ window.BENCHMARK_DATA = {
             "name": "ackermann-3-3",
             "value": 280440,
             "range": "± 11348",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Matthew Paras",
+            "username": "mattwparas",
+            "email": "34500476+mattwparas@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "ba17b8e7bb730829d52fd9a88ecce488daba9965",
+          "message": "Port refactor, bug fixes with quasiquote (#105)\n\n* quasiquote fixes, mutable pair compatibility layer\r\n\r\n* refactor port implementation\r\n\r\n* fix warnings\r\n\r\n* new string functions\r\n\r\n* reader was a little broken",
+          "timestamp": "2023-12-02T01:07:18Z",
+          "url": "https://github.com/mattwparas/steel/commit/ba17b8e7bb730829d52fd9a88ecce488daba9965"
+        },
+        "date": 1701479774926,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "range-big",
+            "value": 118,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "map-big",
+            "value": 710592,
+            "range": "± 3095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transducer-map",
+            "value": 1676564,
+            "range": "± 53385",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "filter-big",
+            "value": 435125,
+            "range": "± 800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations",
+            "value": 864931,
+            "range": "± 8292",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ten-thousand-iterations-letrec",
+            "value": 1647499,
+            "range": "± 5669",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "trie-sort-without-optimizations",
+            "value": 24294,
+            "range": "± 1520",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib-28/fib-28",
+            "value": 62341679,
+            "range": "± 2054564",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "engine-creation",
+            "value": 53634161,
+            "range": "± 1213454",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "register-fn",
+            "value": 211,
+            "range": "± 62",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "multiple-transducers",
+            "value": 9847,
+            "range": "± 27",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ackermann-3-3",
+            "value": 284860,
+            "range": "± 21178",
             "unit": "ns/iter"
           }
         ]
